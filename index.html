@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Small Offer Lab</title>
-  <meta name="description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 17:48:15.">
+  <meta name="description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 17:55:46.">
   <meta property="og:type" content="product">
   <meta property="og:site_name" content="Small Offer Lab">
   <meta property="og:title" content="Small Offer Lab">
-  <meta property="og:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 17:48:15.">
+  <meta property="og:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 17:55:46.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Small Offer Lab">
-  <meta name="twitter:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 17:48:15.">
+  <meta name="twitter:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 17:55:46.">
   <link rel="canonical" href="https://small-offer-lab.vercel.app/">
   <meta property="og:url" content="https://small-offer-lab.vercel.app/">
   <meta property="og:image" content="https://small-offer-lab.vercel.app/assets/packages/2026-06-19/cover.png">
@@ -50,6 +50,34 @@
       position: sticky;
       top: 0;
       z-index: 10;
+    }
+    header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand-block {
+      min-width: 0;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+      font-size: 13px;
+    }
+    .nav-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 4px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fbfcfe;
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration: none;
     }
     .wrap {
       width: min(1080px, calc(100% - 32px));
@@ -335,6 +363,10 @@
       color: var(--accent);
       box-shadow: none;
     }
+    .button:hover, .nav-links a:hover {
+      text-decoration: none;
+      filter: brightness(0.98);
+    }
     a:hover { text-decoration: underline; }
     .empty {
       color: var(--muted);
@@ -439,6 +471,13 @@
     }
     @media (max-width: 760px) {
       header { position: static; }
+      header .wrap {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .nav-links {
+        justify-content: flex-start;
+      }
       .hero {
         grid-template-columns: 1fr;
         padding: 20px;
@@ -465,8 +504,17 @@
 <body>
   <header>
     <div class="wrap">
-      <h1>Small Offer Lab</h1>
-      <p class="lead">小さなデジタル商品を試す場所. Updated 2026-06-19 17:48:15.</p>
+      <div class="brand-block">
+        <h1>Small Offer Lab</h1>
+        <p class="lead">小さなデジタル商品を試す場所. Updated 2026-06-19 17:55:46.</p>
+      </div>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#contents">&#20869;&#23481;</a>
+        <a href="#steps">&#20351;&#12356;&#26041;</a>
+        <a href="#samples">&#12469;&#12531;&#12503;&#12523;</a>
+        <a href="#faq">FAQ</a>
+        <a href="#buy">&#36092;&#20837;</a>
+      </nav>
     </div>
   </header>
   <main class="wrap">

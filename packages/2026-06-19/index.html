@@ -70,6 +70,34 @@
       top: 0;
       z-index: 10;
     }
+    header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand-block {
+      min-width: 0;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+      font-size: 13px;
+    }
+    .nav-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 4px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fbfcfe;
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration: none;
+    }
     .wrap {
       width: min(1080px, calc(100% - 32px));
       margin: 0 auto;
@@ -354,6 +382,10 @@
       color: var(--accent);
       box-shadow: none;
     }
+    .button:hover, .nav-links a:hover {
+      text-decoration: none;
+      filter: brightness(0.98);
+    }
     a:hover { text-decoration: underline; }
     .empty {
       color: var(--muted);
@@ -458,6 +490,13 @@
     }
     @media (max-width: 760px) {
       header { position: static; }
+      header .wrap {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .nav-links {
+        justify-content: flex-start;
+      }
       .hero {
         grid-template-columns: 1fr;
         padding: 20px;
@@ -484,12 +523,21 @@
 <body>
   <header>
     <div class="wrap">
-      <h1>メモを記事・短文投稿・販売導線に変えるプロンプト集</h1>
-      <p class="lead">発信したいけれど、毎回ゼロから書き始めるのが重い人 / 980円 digital prompt pack</p>
+      <div class="brand-block">
+        <h1>メモを記事・短文投稿・販売導線に変えるプロンプト集</h1>
+        <p class="lead">発信したいけれど、毎回ゼロから書き始めるのが重い人 / 980円 digital prompt pack</p>
+      </div>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#contents">&#20869;&#23481;</a>
+        <a href="#steps">&#20351;&#12356;&#26041;</a>
+        <a href="#samples">&#12469;&#12531;&#12503;&#12523;</a>
+        <a href="#faq">FAQ</a>
+        <a href="#buy">&#36092;&#20837;</a>
+      </nav>
     </div>
   </header>
   <main class="wrap">
-    <section class="hero">
+    <section class="hero" id="buy">
       <div class="hero-copy">
         <div class="eyebrow">Small Offer Lab</div>
         <h1 class="hero-title">メモを記事・短文投稿・販売導線に変えるプロンプト集</h1>
@@ -536,7 +584,7 @@
       </div>
     </section>
 
-    <section class="content">
+    <section class="content" id="contents">
       <p class="section-kicker">&#21454;&#37682;&#20869;&#23481;</p>
       <h2>ZIP&#12395;&#20837;&#12387;&#12390;&#12356;&#12427;&#12418;&#12398;</h2>
       <div class="deliverables">
@@ -548,7 +596,7 @@
       </div>
     </section>
 
-    <section class="content">
+    <section class="content" id="steps">
       <p class="section-kicker">&#20351;&#12356;&#26041;</p>
       <h2>&#12513;&#12514;&#12434;5&#12388;&#12398;&#20986;&#21147;&#12395;&#20998;&#12369;&#12427;</h2>
       <ol class="steps-list">
@@ -560,7 +608,7 @@
       </ol>
     </section>
 
-    <section class="sample-grid">
+    <section class="sample-grid" id="samples">
       <div class="sample-card">
         <p class="section-kicker">&#28961;&#26009;&#25237;&#31295;&#12398;&#12452;&#12513;&#12540;&#12472;</p>
         <h1>ひとつのメモを複数の投稿に変える</h1>
@@ -647,7 +695,7 @@ Threads:
       </div>
     </details>
 
-    <section class="faq-grid">
+    <section class="faq-grid" id="faq">
       <div class="faq">
         <h3>&#12393;&#12435;&#12394;&#24418;&#12391;&#23626;&#12365;&#12414;&#12377;&#12363;&#65311;</h3>
         <p>BOOTH&#12391;&#36092;&#20837;&#24460;&#12289;ZIP&#12501;&#12449;&#12452;&#12523;&#12392;&#12375;&#12390;&#12480;&#12454;&#12531;&#12525;&#12540;&#12489;&#12391;&#12365;&#12414;&#12377;&#12290;</p>
