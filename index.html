@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Small Offer Lab</title>
-  <meta name="description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 18:01:22.">
+  <meta name="description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 18:08:33.">
   <meta property="og:type" content="product">
   <meta property="og:site_name" content="Small Offer Lab">
   <meta property="og:title" content="Small Offer Lab">
-  <meta property="og:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 18:01:22.">
+  <meta property="og:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 18:08:33.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Small Offer Lab">
-  <meta name="twitter:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 18:01:22.">
+  <meta name="twitter:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 18:08:33.">
   <link rel="canonical" href="https://small-offer-lab.vercel.app/">
   <meta property="og:url" content="https://small-offer-lab.vercel.app/">
   <meta property="og:image" content="https://small-offer-lab.vercel.app/assets/packages/2026-06-19/cover.png">
@@ -184,6 +184,29 @@
       margin: 0;
       color: var(--muted);
       font-size: 13px;
+    }
+    .assurance-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0 0;
+    }
+    .assurance {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fbfcfe;
+    }
+    .assurance strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+    .assurance span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
     }
     .cover-wrap {
       padding: 10px;
@@ -520,6 +543,9 @@
       .value-grid {
         grid-template-columns: 1fr;
       }
+      .assurance-row {
+        grid-template-columns: 1fr;
+      }
       .compare-grid, .faq-grid {
         grid-template-columns: 1fr;
       }
@@ -541,7 +567,7 @@
     <div class="wrap">
       <div class="brand-block">
         <h1>Small Offer Lab</h1>
-        <p class="lead">小さなデジタル商品を試す場所. Updated 2026-06-19 18:01:22.</p>
+        <p class="lead">小さなデジタル商品を試す場所. Updated 2026-06-19 18:08:33.</p>
       </div>
       <nav class="nav-links" aria-label="Page sections">
         <a href="#contents">&#20869;&#23481;</a>

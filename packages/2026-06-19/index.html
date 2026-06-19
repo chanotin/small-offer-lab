@@ -204,6 +204,29 @@
       color: var(--muted);
       font-size: 13px;
     }
+    .assurance-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0 0;
+    }
+    .assurance {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fbfcfe;
+    }
+    .assurance strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+    .assurance span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+    }
     .cover-wrap {
       padding: 10px;
       border: 1px solid var(--line);
@@ -539,6 +562,9 @@
       .value-grid {
         grid-template-columns: 1fr;
       }
+      .assurance-row {
+        grid-template-columns: 1fr;
+      }
       .compare-grid, .faq-grid {
         grid-template-columns: 1fr;
       }
@@ -590,6 +616,12 @@
       <div class="cover-wrap">
         <img class="cover" src="../../assets/packages/2026-06-19/cover.png" alt="">
       </div>
+    </section>
+
+    <section class="assurance-row" aria-label="Purchase notes">
+      <div class="assurance"><strong>&#36092;&#20837;&#24460;&#12377;&#12368;&#12395;&#21463;&#12369;&#21462;&#12426;</strong><span>BOOTH&#12391;&#36092;&#20837;&#24460;&#12289;ZIP&#12501;&#12449;&#12452;&#12523;&#12392;&#12375;&#12390;&#12480;&#12454;&#12531;&#12525;&#12540;&#12489;&#12391;&#12365;&#12414;&#12377;&#12290;</span></div>
+      <div class="assurance"><strong>AI&#12481;&#12515;&#12483;&#12488;&#12395;&#36028;&#12427;&#12384;&#12369;</strong><span>&#20013;&#12398;&#12503;&#12525;&#12531;&#12503;&#12488;&#12395;&#25163;&#20803;&#12398;&#12513;&#12514;&#12434;&#20837;&#12428;&#12390;&#20351;&#12358;&#24819;&#23450;&#12391;&#12377;&#12290;</span></div>
+      <div class="assurance"><strong>&#36605;&#12356;&#23455;&#39443;&#29992;</strong><span>&#22770;&#19978;&#20445;&#35388;&#12391;&#12399;&#12394;&#12367;&#12289;&#27598;&#22238;&#26360;&#12367;&#37325;&#12373;&#12434;&#36605;&#12367;&#12377;&#12427;&#12383;&#12417;&#12398;&#23567;&#12373;&#12394;&#36947;&#20855;&#12391;&#12377;&#12290;</span></div>
     </section>
 
     <section class="value-grid">
