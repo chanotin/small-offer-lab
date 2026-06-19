@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Small Offer Lab</title>
-  <meta name="description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 17:55:46.">
+  <meta name="description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 18:01:22.">
   <meta property="og:type" content="product">
   <meta property="og:site_name" content="Small Offer Lab">
   <meta property="og:title" content="Small Offer Lab">
-  <meta property="og:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 17:55:46.">
+  <meta property="og:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 18:01:22.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Small Offer Lab">
-  <meta name="twitter:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 17:55:46.">
+  <meta name="twitter:description" content="小さなデジタル商品を試す場所. Updated 2026-06-19 18:01:22.">
   <link rel="canonical" href="https://small-offer-lab.vercel.app/">
   <meta property="og:url" content="https://small-offer-lab.vercel.app/">
   <meta property="og:image" content="https://small-offer-lab.vercel.app/assets/packages/2026-06-19/cover.png">
@@ -237,6 +237,38 @@
       color: var(--muted);
       font-size: 13px;
       line-height: 1.55;
+    }
+    .decision {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: center;
+      margin-top: 14px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 18px 50px rgba(23, 32, 46, 0.06);
+    }
+    .decision h2 {
+      margin: 0 0 8px;
+    }
+    .decision-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .decision-list li {
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fbfcfe;
+      color: #394455;
+      font-size: 13px;
+      font-weight: 700;
     }
     .section-kicker {
       margin: 0 0 8px;
@@ -491,6 +523,9 @@
       .compare-grid, .faq-grid {
         grid-template-columns: 1fr;
       }
+      .decision {
+        grid-template-columns: 1fr;
+      }
       .deliverables, .steps-list, .sample-grid {
         grid-template-columns: 1fr;
       }
@@ -506,7 +541,7 @@
     <div class="wrap">
       <div class="brand-block">
         <h1>Small Offer Lab</h1>
-        <p class="lead">小さなデジタル商品を試す場所. Updated 2026-06-19 17:55:46.</p>
+        <p class="lead">小さなデジタル商品を試す場所. Updated 2026-06-19 18:01:22.</p>
       </div>
       <nav class="nav-links" aria-label="Page sections">
         <a href="#contents">&#20869;&#23481;</a>
